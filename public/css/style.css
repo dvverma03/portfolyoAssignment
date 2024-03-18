@@ -1,0 +1,1619 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Dora Personal Portfolio Template
+    Template URI: site.com
+    Description: Dora is a one page style personal portfolio template for any professional like developer, designer, freelancer, engineer, specialist, content writer, instructor, photographer, freelancer, politician, or some other expert can demonstrate his bio, portfolio, skill set etc . It is easy to customise, all the layers well organised to make any change easy to do without any problems. Super easy to custom everything in the layouts, you will be free to mixing the elements and components to create your own design with business template. This will be a smart choice for your next projects.
+    Author: CodeeFly 
+    Author URI: https://themeforest.net/user/codeefly/
+    Version: 1.0
+
+--------------------------
+    TABLE OF CONTENTS
+--------------------------
+
+    - Default css 
+    - Bootstrap grid css
+    - Popup css
+    - Custom Cursor css
+    - Preloader css
+    - Common Classes css 
+    - Custom Animation Css
+    - Header css 
+    - Hero css
+    - Support css 
+    - Service css
+    - Experience css 
+    - Work css 
+    - Testimonial css 
+    - Blog css 
+    - Contact css
+    - Footer css
+
+-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------
+                Dora Default css                   
+---------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: #6f6b80;
+  font-size: 16px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*---------------------------------------------------
+           Dora Bootstrap Grid css                   
+---------------------------------------------------*/
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1350px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.row > * {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+/*---------------------------------------------------
+              Dora Popup css                    
+---------------------------------------------------*/
+.dora-popup .mfp-content {
+  background: #ffffff;
+  width: 500px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 575.98px) {
+  .dora-popup .mfp-content {
+    width: 300px;
+  }
+}
+.dora-popup .mfp-content .mfp-close {
+  background: #ffffff;
+  color: #15295f;
+  border-radius: 50%;
+  margin: 10px;
+}
+.dora-popup .mfp-content .content .img img {
+  width: 100%;
+}
+.dora-popup .mfp-content .content .des {
+  padding: 20px 30px 20px;
+}
+.dora-popup .mfp-content .content .des span {
+  color: #fd6e0a;
+  font-size: 18px;
+}
+.dora-popup .mfp-content .content .des h4 {
+  color: #15295f;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 1.3;
+}
+@media only screen and (max-width: 575.98px) {
+  .dora-popup .mfp-content .content .des h4 {
+    font-size: 18px;
+  }
+}
+.dora-popup .mfp-content .content .des p {
+  margin-top: 20px;
+}
+.dora-popup .mfp-content .content .des .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 575.98px) {
+  .dora-popup .mfp-content .content .des .d-flex {
+    display: block;
+  }
+}
+.dora-popup .mfp-content .content .des ul li {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+}
+@media only screen and (max-width: 575.98px) {
+  .dora-popup .mfp-content .content .des ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+.dora-popup .mfp-content .content .des ul li a {
+  color: #fd6e0a;
+  font-size: 14px;
+}
+.dora-popup .mfp-content .content .des ul li::before {
+  content: "";
+  height: 7px;
+  width: 7px;
+  background: #ececec;
+  display: block;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/*---------------------------------------------------
+                     Dora Cursor css                   
+---------------------------------------------------*/
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  visibility: hidden;
+  margin-left: -12.5px;
+  margin-top: -12.5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  z-index: 999;
+  background-color: #fd6e0a;
+  -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
+    margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+@media only screen and (max-width: 1199.97px) {
+  .cursor {
+    display: none;
+  }
+}
+
+.cursor.cursor-hover {
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #fd6e0a;
+  opacity: 0.3;
+}
+
+/*---------------------------------------------------
+                Dora Preloader css                   
+---------------------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #1f1d2b;
+  z-index: 999;
+}
+.preloader__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.preloader__container__percent {
+  font-size: 75px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.preloader__container__preload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.preloader__container__preload__dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 10px;
+}
+
+/*---------------------------------------------------
+                     Dora Common css                   
+---------------------------------------------------*/
+.slider-arrow {
+  width: 50px;
+  height: 50px;
+  background: #cdcdcd;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.slider-arrow svg {
+  width: 25px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.slider-arrow:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  background: #fd6e0a;
+}
+.slider-arrow:hover svg {
+  stroke: #ffffff;
+}
+.slider-arrow.active {
+  background: #fd6e0a;
+}
+.slider-arrow.active svg {
+  stroke: #ffffff;
+}
+
+.section_title p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #fd6e0a;
+}
+@media only screen and (max-width: 650px) {
+  .section_title p {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+.section_title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #15295f;
+}
+@media only screen and (max-width: 650px) {
+  .section_title h2 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+.section_title.center {
+  text-align: center;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  border-radius: 50px;
+}
+.btn:focus {
+  outline: none;
+}
+
+.primary-btn {
+  background-color: #fd6e0a;
+  border: 2px solid transparent;
+  color: #ffffff;
+}
+.primary-btn:hover {
+  background-color: transparent;
+  border-color: #fd6e0a;
+  color: #fd6e0a;
+}
+
+.secondary-btn {
+  border: 2px solid #fd6e0a;
+  color: #fd6e0a;
+}
+.secondary-btn:hover {
+  background-color: #fd6e0a;
+  color: #ffffff;
+}
+
+.works-section,
+.contact-section,
+.feedback-section,
+.service-section {
+  padding: 70px 0;
+}
+
+.fill-section,
+.experience-section {
+  padding: 65px 0 100px;
+}
+
+.hover-this {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*---------------------------------------------------
+            Dora Custom animation css                   
+---------------------------------------------------*/
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes showImg {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes showImg {
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*---------------------------------------------------
+            Dora Header css                   
+---------------------------------------------------*/
+.header {
+  width: 100%;
+  /* -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; */
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media only screen and (max-width: 991.97px) {
+  .header .brand-name-toggle {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.header .brand-name img {
+  width: 100px;
+}
+.header .toggle {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: none;
+}
+@media only screen and (max-width: 991.97px) {
+  .header .toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.header .toggle span {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #15295f;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 0;
+}
+.header .toggle span:nth-child(1) {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  width: 25px;
+}
+.header .toggle span:nth-child(2) {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  width: 15px;
+}
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+@media only screen and (max-width: 991.97px) {
+  .header nav {
+    display: none;
+  }
+  .header nav .nav-btn {
+    margin-top: 20px;
+  }
+}
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 25px 0;
+}
+@media only screen and (max-width: 991.97px) {
+  .header nav ul li {
+    margin-left: 5px;
+    padding: 5px 0;
+    display: block;
+  }
+}
+.header nav ul li.current a {
+  color: #fd6e0a;
+}
+.header nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #15295f;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.header nav ul li a:hover {
+  color: #fd6e0a;
+}
+.header.fixed {
+  position: fixed;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+.header.fixed .nav ul li a:hover {
+  color: #fd6e0a;
+}
+
+header .container.active {
+  max-height: 100%;
+  background: #ffffff;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header .container.active .toggle span:nth-child(1) {
+  width: 30px;
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+  -webkit-transition-delay: 0.125s;
+  transition-delay: 0.125s;
+}
+header .container.active .toggle span:nth-child(2) {
+  width: 30px;
+  -webkit-transform: translateY(0) rotate(315deg);
+  transform: translateY(0) rotate(315deg);
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+header .container.active .toggle span:nth-child(3) {
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+}
+
+/*---------------------------------------------------
+               Dora Hero Section css                   
+---------------------------------------------------*/
+.hero-section {
+  background-color: #fdf8f7;
+  position: relative;
+  padding-top: 100px;
+}
+@media only screen and (max-width: 991.97px) {
+  .hero-section {
+    padding-bottom: 100px;
+    padding-top: 120px;
+  }
+}
+.hero-section .hero-text {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: auto 0;
+}
+@media only screen and (max-width: 991.97px) {
+  .hero-section .hero-text {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 500px;
+  }
+}
+.hero-section .hero-text span {
+  color: #fd6e0a;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.hero-section .hero-text h1 {
+  color: #15295f;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 10px 0;
+  margin-top: -20px;
+}
+@media only screen and (max-width: 991.97px) {
+  .hero-section .hero-text h1 {
+    font-size: 60px;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+}
+.hero-section .hero-text h3 {
+  color: #15295f;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+.hero-section .hero-text p {
+  margin: 20px 0 50px;
+}
+.hero-section .hero-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.hero-section .hero-img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+@media only screen and (max-width: 991.97px) {
+  .hero-section .hero-img {
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .hero-section .hero-img {
+    display: none;
+  }
+}
+.hero-section .hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/*---------------------------------------------------
+               Dora Support Section css                   
+---------------------------------------------------*/
+.support-section .support-items {
+  position: relative;
+  max-width: 90%;
+  margin: -70px auto 0;
+  padding: 15px 0;
+  border-radius: 500px;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+}
+@media only screen and (max-width: 1199.97px) {
+  .support-section .support-items {
+    margin: 60px auto 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .support-section .support-items {
+    padding: 0;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+  }
+  .support-section .support-items .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+.support-section .support-items .support-item {
+  padding: 15px 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 10px;
+  border-right: 1px solid #f2f2f2;
+}
+@media only screen and (max-width: 991.97px) {
+  .support-section .support-items .support-item {
+    display: block;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .support-section .support-items .support-item {
+    padding: 15px 20px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 300px;
+    border: none;
+    border-radius: 500px;
+    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+  }
+}
+@media only screen and (max-width: 636px) {
+  .support-section .support-items .support-item {
+    max-width: 278px;
+  }
+}
+@media only screen and (max-width: 592px) {
+  .support-section .support-items .support-item {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
+.support-section .support-items .support-item:last-child {
+  border-right: 1px solid transparent;
+}
+.support-section .support-items .support-item .support-text h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #15295f;
+  margin-bottom: 8px;
+}
+.support-section .support-items .support-item .support-text p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fd6e0a;
+}
+.support-section .support-items .support-item .support-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #fd6e0a;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 636px) {
+  .support-section .support-items .support-item .support-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 991.97px) {
+  .support-section .support-items .support-item .support-icon {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .support-section .support-items .support-item .support-icon {
+    margin: 0px;
+  }
+}
+
+/*---------------------------------------------------
+               Dora Service Section css                   
+---------------------------------------------------*/
+.service-section {
+  overflow: hidden;
+}
+.service-section .row {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+@media only screen and (max-width: 991.97px) {
+  .service-section .row {
+    display: block;
+  }
+}
+.service-section .service-title-container {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+@media only screen and (max-width: 991.97px) {
+  .service-section .service-title-container {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .service-section .service-title-container .section_title {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 575.98px) {
+  .service-section .service-title-container {
+    display: block;
+  }
+  .service-section .service-title-container .section_title {
+    max-width: 100%;
+  }
+  .service-section .service-title-container .service-btn-container {
+    padding-top: 20px;
+  }
+}
+.service-section .service-btn-container {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 991.97px) {
+  .service-section .service-btn-container {
+    padding-top: 0;
+  }
+}
+.service-section .services-cont {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 40px 20px;
+}
+.service-section .service-item {
+  padding: 35px 25px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+.service-section .service-item .service-item-logo {
+  display: block;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.service-section .service-item .service-item-logo-cont-1 {
+  background-color: #9c19c9;
+}
+.service-section .service-item .service-item-logo-cont-2 {
+  background-color: #ffaf00;
+}
+.service-section .service-item .service-item-logo-cont-3 {
+  background-color: #ff4e6e;
+}
+.service-section .service-item .service-item-logo-cont-4 {
+  background-color: #4ac3ca;
+}
+.service-section .service-item .service-item-logo-cont-5 {
+  background-color: #4ac3ca;
+}
+.service-section .service-item .service-item-logo-cont-6 {
+  background-color: #4ac3ca;
+}
+.service-section .service-item .service-item-logo-cont-7 {
+  background-color: #4ac3ca;
+}
+.service-section .service-item h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #15295f;
+  margin: 20px 0 15px;
+}
+@media only screen and (max-width: 650px) {
+  .service-section .service-item h4 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+/*---------------------------------------------------
+           Dora Experience Section css                   
+---------------------------------------------------*/
+.experience-section {
+  background-color: #fdf8f7;
+  position: relative;
+}
+.experience-section .experience-bg-element img {
+  position: absolute;
+  z-index: 1;
+}
+.experience-section .experience-bg-element img:first-child {
+  left: 20px;
+  top: 0;
+}
+.experience-section .experience-bg-element img:last-child {
+  right: 50px;
+  bottom: 50px;
+}
+.experience-section .experience-items {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media only screen and (max-width: 767.98px) {
+  .experience-section .experience-items {
+    gap: 0;
+  }
+}
+.experience-section .experience-items .experience-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+@media only screen and (max-width: 767.98px) {
+  .experience-section .experience-items .experience-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.experience-section .experience-items .experience-item .experience-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.experience-section .experience-items .experience-item .experience-info p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #15295f;
+  opacity: 0;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation: showText 0.5s 1s linear forwards;
+}
+.experience-section .experience-items .experience-item .progress-line {
+  margin-top: 7px;
+  height: 10px;
+  width: 100%;
+  background-color: #cdcdcd;
+  position: relative;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  border-radius: 50px;
+}
+.experience-section .experience-items .experience-item .progress-line span {
+  border-radius: 50px;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  background-color: #fd6e0a;
+  transition: 1s all;
+}
+.experience-section
+  .experience-items
+  .experience-item
+  .progress-line
+  span.animate {
+  -webkit-animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/*---------------------------------------------------
+               Dora Work Section css                   
+---------------------------------------------------*/
+.works-section .works-list-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px 25px;
+  margin: 15px 0 40px;
+  -webkit-transform: all 0.5s ease;
+  transform: all 0.5s ease;
+}
+@media only screen and (max-width: 530px) {
+  .works-section .works-list-ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.works-section .works-list-ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #15295f;
+  cursor: pointer;
+}
+.works-section .works-list-ul li:hover {
+  color: #fd6e0a;
+}
+.works-section .works-list-ul li.active {
+  color: #fd6e0a;
+}
+.works-section .works-col {
+  width: 33%;
+  overflow: hidden;
+  float: left;
+}
+@media only screen and (max-width: 991.97px) {
+  .works-section .works-col {
+    width: 49%;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .works-section .works-col {
+    width: 100%;
+  }
+  .works-section .works-col a {
+    margin: 0 auto;
+  }
+}
+.works-section .works-col a {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.works-section .works-col a:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.works-section .works-col img {
+  display: block;
+  max-width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*---------------------------------------------------
+         Dora Testimonial Section css                   
+---------------------------------------------------*/
+.feedback-section {
+  padding: 0 0 100px;
+}
+.feedback-section .feedback-section-title-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+@media only screen and (max-width: 575.98px) {
+  .feedback-section .feedback-section-title-cont {
+    display: block;
+  }
+  .feedback-section .feedback-section-title-cont .section_title {
+    max-width: 100%;
+  }
+  .feedback-section .feedback-section-title-cont .feedback-btn-cont {
+    padding-top: 20px;
+  }
+}
+.feedback-section .feedback-btn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+.feedback-section .feedback-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  background: #fafbfd;
+}
+.feedback-section .feedback-item .feedback-active-img {
+  margin-right: 20px;
+  max-width: 300px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+}
+@media only screen and (max-width: 650px) {
+  .feedback-section .feedback-item .feedback-active-img {
+    display: none;
+  }
+}
+.feedback-section .feedback-item .feedback-active-img img {
+  height: 100%;
+  max-width: 100%;
+}
+.feedback-section .feedback-item .feedback-info-cont {
+  padding: 20px;
+}
+.feedback-section .feedback-item .feedback-info-cont .feedback-txt {
+  padding: 15px 0 40px;
+}
+.feedback-section .feedback-item .feedback-info-cont .feedback-person-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 15px;
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-person-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .feedback-section
+    .feedback-item
+    .feedback-info-cont
+    .feedback-person-info
+    .feedback-person-img {
+    display: block;
+  }
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-person-img
+  img {
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 50%;
+}
+.feedback-section .feedback-item .feedback-info-cont .feedback-person-info h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #15295f;
+}
+@media only screen and (max-width: 650px) {
+  .feedback-section
+    .feedback-item
+    .feedback-info-cont
+    .feedback-person-info
+    h4 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-star-cont {
+  margin-top: 8px;
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-star-cont
+  ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-star-cont
+  ul
+  li {
+  width: 20px;
+  height: 20px;
+}
+.feedback-section
+  .feedback-item
+  .feedback-info-cont
+  .feedback-person-info
+  .feedback-star-cont
+  ul
+  li
+  img {
+  width: 100%;
+  height: 100%;
+}
+.feedback-section .feedback-item .feedback-title-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.feedback-section .feedback-item .feedback-title-cont .feedback-title-element {
+  width: 30px;
+  height: 50px;
+}
+.feedback-section
+  .feedback-item
+  .feedback-title-cont
+  .feedback-title-element
+  img {
+  max-width: 100%;
+}
+.feedback-section .feedback-item .feedback-title-cont h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #15295f;
+}
+@media only screen and (max-width: 650px) {
+  .feedback-section .feedback-item .feedback-title-cont h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+}
+
+/*---------------------------------------------------
+               Dora Blog Section css                   
+---------------------------------------------------*/
+.blog-section {
+  background-color: #1f1d2b;
+}
+.blog-section h2 {
+  color: #ffffff;
+}
+.blog-section .blog-items {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1199.97px) {
+  .blog-section .blog-items {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.blog-section .blog-items .blog-item {
+  position: relative;
+  width: 33.33%;
+  padding: 0 15px;
+}
+@media only screen and (max-width: 1199.97px) {
+  .blog-section .blog-items .blog-item {
+    width: 50%;
+    margin: 0 0 50px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .blog-section .blog-items .blog-item {
+    width: 100%;
+    margin: 0 0 50px;
+    padding-left: 25px;
+  }
+}
+.blog-section .blog-items .blog-item .blog-date-cont {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 8px;
+  padding: 5px;
+  background-color: #1f1d2b;
+}
+.blog-section .blog-items .blog-item .blog-date-cont p {
+  font-size: 12px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+.blog-section .blog-items .blog-item .blog-item-img {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+.blog-section .blog-items .blog-item .blog-item-img img {
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.blog-section .blog-items .blog-item .blog-info a.category {
+  padding: 10px 0 5px;
+  font-size: 15px;
+  display: inline-block;
+  color: #fd6e0a;
+}
+.blog-section .blog-items .blog-item .blog-info h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.blog-section .blog-items .blog-item:hover .blog-item-img {
+  display: block;
+}
+.blog-section .blog-items .blog-item:hover .blog-item-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/*---------------------------------------------------
+               Dora Project Section css                   
+---------------------------------------------------*/
+
+.project_section_desc{
+  margin-top: 20px;
+}
+
+.project_section_image{
+  width: 350px;
+  height: 250px;
+}
+
+.project_cards_section{
+  width: 350px;
+  height: 250px;
+}
+.project_section_text{
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+/*---------------------------------------------------
+               Dora Contact Section css                   
+---------------------------------------------------*/
+.contact-section {
+  padding: 70px 0;
+}
+.contact-section .contact-info-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 130px;
+}
+@media only screen and (max-width: 767.98px) {
+  .contact-section .contact-info-cont {
+    display: block;
+  }
+}
+@media only screen and (max-width: 991.97px) {
+  .contact-section .contact-info-cont {
+    gap: 30px;
+  }
+}
+.contact-section .contact-info {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.social_media_links{
+  width: 50px;
+  height: 50px;
+}
+.social_media_img{
+  width:50px;
+  height: 50px;
+}
+.social_media_name{
+  font-size: 12px;
+}
+@media only screen and (max-width: 767.98px) {
+  .contact-section .contact-info {
+    display: none;
+  }
+}
+.contact-section .contact-info h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: capitalize;
+}
+.contact-section .contact-info p {
+  padding: 15px 0 25px;
+}
+.contact-section .contact-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.contact-section .contact-social li a {
+  color: unset;
+}
+.contact-section .contact-social li i {
+  font-size: 18px;
+}
+.contact-section .contact-form {
+  max-width: 100%;
+}
+.contact-section .contact-form h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #15295f;
+}
+.contact-section .contact-form .input-control {
+  margin-top: 25px;
+  padding: 15px 30px;
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+}
+.contact-section .contact-form .input-control:focus {
+  outline: none;
+  border-color: #fd6e0a;
+}
+.contact-section .contact-form textarea {
+  height: 170px;
+  resize: none;
+}
+.contact-section .contact-form .form-btn {
+  margin-top: 30px;
+}
+.contact-section .contact-form .form-btn button {
+  padding: 15px 30px;
+}
+.contact-section input[type="text"],
+.contact-section textarea,
+.contact-section button {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*---------------------------------------------------
+               Dora footer css                   
+---------------------------------------------------*/
+.copyright {
+  padding: 40px 0;
+  background-color: #fdf8f7;
+  text-align: center;
+}
+.copyright p {
+  color: #15295f;
+}
+.copyright a {
+  color: #fd6e0a;
+} /*# sourceMappingURL=style.css.map */
