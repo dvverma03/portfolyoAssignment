@@ -33,7 +33,8 @@ const Experience = () => {
                   <p>{e.name}</p>
                   <p>{e.percentage}</p>
                 </div>
-                <div className="progress-line" data-percent={e.percentage}>
+                <div className="progress-line" data-percent={`${e.percentage}%`}>
+
                   <span />
                 </div>
               </div>
