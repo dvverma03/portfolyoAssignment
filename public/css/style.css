@@ -990,6 +990,12 @@ header .container.active .toggle span:nth-child(3) {
 .service-section .service-item .service-item-logo-cont-4 {
   background-color: #4ac3ca;
 }
+.service-section .service-item .service-item-logo-cont-5 {
+  background-color: #e2dc61;
+}
+.service-section .service-item .service-item-logo-cont-6 {
+  background-color: #5fe75f;
+}
 .service-section .service-item h4 {
   font-weight: 600;
   font-size: 24px;
