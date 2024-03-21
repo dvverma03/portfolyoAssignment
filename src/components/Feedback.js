@@ -5,7 +5,7 @@ import axios from "axios";
 
 const Feedback = () => {
 
-
+  
   const [feedback, setFeedback] = useState(null);
 
   useEffect(() => {
@@ -20,7 +20,6 @@ const Feedback = () => {
 
     fetchData();
   }, []);
-
 
 
   return (
@@ -57,8 +56,7 @@ const Feedback = () => {
           className="swiper feedback-items-cont"
         >
           <div className="swiper-wrapper feedback-items wow fadeInUp">
-            {/* 01 feedback item start */}
-            {feedback && feedback.map((e, i)=>(
+          {feedback && feedback.map((e, i)=>(
               <SwiperSlide key={i} className="swiper-slide feedback-item">
               <div className="feedback-active-img">
                 <img src={e?.image?.url} alt="dora_img" />
