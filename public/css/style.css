@@ -1292,7 +1292,7 @@ header .container.active .toggle span:nth-child(3) {
   .feedback-person-img
   img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   border-radius: 50%;
 }
 .feedback-section .feedback-item .feedback-info-cont .feedback-person-info h4 {
@@ -1384,6 +1384,7 @@ header .container.active .toggle span:nth-child(3) {
     line-height: 1.3;
   }
 }
+
 
 /*---------------------------------------------------
                Dora Blog Section css                   
